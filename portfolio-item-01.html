@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width , initial-scale=1.0"
+        />
+        <title>Work | push_swap</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="mouad el asri logo image" />
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link capitalize"
+                            >home</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a
+                            href="./index.html#services"
+                            class="nav__link capitalize"
+                            >services</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a
+                            href="./index.html#about"
+                            class="nav__link capitalize"
+                            >about</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./index.html#work" class="nav__link capitalize"
+                            >work</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro capitalize">
+                welcome to my<strong>push_swap</strong>project
+            </h1>
+
+            <p class="section__subtitle section__subtitle--intro capitalize">
+                data sorting project
+            </p>
+
+            <img
+                src="./img/portfolio-01.png"
+                alt="a picture of push_swap visualizer"
+                class="intro__img"
+            />
+        </section>
+
+        <!-- About Project -->
+
+        <div class="portfolio-item-individual">
+            <p>
+                This project involves sorting data on a stack, with a limited
+                set of instructions, and the smallest number of moves. To make
+                this happen, I had to manipulate various sorting algorithms and
+                chose the most appropriate solution(s) for optimized data
+                sorting.
+            </p>
+            <img
+                src="./img/push_swap.gif"
+                alt="image of the push_swap visualizer"
+                class="portfolio-item-individual__img"
+            />
+            <h2 class="capitalize">introduction</h2>
+            <p>
+                The Push swap project is a very simple and a highly
+                straightforward algorithm project: data must be sorted.
+            </p>
+            <p>
+                I have at my disposal a set of integer values, 2 stacks, and a
+                set of instructions to manipulate both stacks.
+            </p>
+            <p>
+                My goal? is to write a program in C called push_swap which
+                calculates and displays on the standard output the smallest
+                program, made of Push swap language instructions, that sorts the
+                integers received as arguments.
+            </p>
+            <p>Easy?</p>
+            <p>We’ll see...</p>
+            <h2 class="capitalize">objectives</h2>
+            <p>
+                Writing a sorting algorithm is always a very important step in a
+                developer’s journey. It is often the first encounter with the
+                concept of complexity.
+            </p>
+            <p>
+                Sorting algorithms and their complexity are part of the classic
+                questions discussed during job interviews. It’s probably a good
+                time to look at these concepts since you’ll have to face them at
+                some point.
+            </p>
+            <p>
+                The learning objectives of this project are rigor, use of C, and
+                use of basic algorithms. Especially focusing on their
+                complexity.
+            </p>
+            <p>
+                Sorting values is simple. To sort them the fastest way possible
+                is less simple. Especially because from one integers
+                configuration to another, the most efficient sorting solution
+                can differ.
+            </p>
+            <h2 class="capitalize">common information</h2>
+            <ul>
+                <li>The project is written in C.</li>
+                <li>The project is written in accordance with the Norm.</li>
+                <li>
+                    Functions should not quit unexpectedly (segmentation fault,
+                    bus error, double free, etc) apart from undefined behaviors.
+                </li>
+                <li>
+                    All heap allocated memory space is properly freed when
+                    necessary.
+                </li>
+                <li>
+                    The project include a Makefile which will compile source
+                    files to the required output with the flags -Wall, -Wextra
+                    and -Werror, using cc, and the Makefile doesn't relink.
+                </li>
+                <li>
+                    Makefile contain the rules $(NAME), all, clean, fclean and
+                    re.
+                </li>
+            </ul>
+            <h2 class="capitalize">the project</h2>
+            <h3 class="capitalize">the rules</h3>
+            <ul>
+                <li>
+                    There is 2 stacks named <strong>A</strong> and
+                    <strong>B</strong>.
+                </li>
+                <li>
+                    At the beginning :
+                    <ul>
+                        <li>
+                            The stack <strong>A</strong> contains a random
+                            amount of negative and/or positive numbers which
+                            cannot be duplicated.
+                        </li>
+                        <li>The stack b is empty.</li>
+                    </ul>
+                </li>
+                <li>
+                    The goal is to sort in ascending order numbers into stack
+                    <strong>A</strong> with following operations :
+                    <ul>
+                        <li>
+                            <strong>sa (swap A) :</strong> Swap the first 2
+                            elements at the top of stack A. <br />
+                            Nothing to do if there is only one or no elements.
+                        </li>
+                        <li>
+                            <strong>sb (swap B) :</strong> Swap the first 2
+                            elements at the top of stack B. <br />
+                            Nothing to do if there is only one or no elements.
+                        </li>
+                        <li>
+                            <strong>ss :</strong> sa and sb at the same time
+                        </li>
+                        <li>
+                            <strong>pa (push A) :</strong> Take the first
+                            element at the top of B and put it at the top of A.
+                            <br />
+                            Nothing to do if B is empty.
+                        </li>
+                        <li>
+                            <strong>pb (push B) :</strong> Take the first
+                            element at the top of A and put it at the top of B.
+                            <br />
+                            Nothing to do if A is empty.
+                        </li>
+                        <li>
+                            <strong>ra (rotate A) :</strong> Shift up all
+                            elements of stack A by 1. The first element becomes
+                            the last one.
+                        </li>
+                        <li>
+                            <strong>rb (rotate B) :</strong> Shift up all
+                            elements of stack B by 1. The first element becomes
+                            the last one.
+                        </li>
+                        <li>
+                            <strong>rr :</strong> ra and rb at the same time.
+                        </li>
+                        <li>
+                            <strong>rra (reverse rotate A) :</strong> Shift down
+                            all elements of stack A by 1. The last element
+                            becomes the first one.
+                        </li>
+                        <li>
+                            <strong>rrb (reverse rotate B) :</strong> Shift down
+                            all elements of stack B by 1. The last element
+                            becomes the first one.
+                        </li>
+                        <li>
+                            <strong>rrr :</strong> rra and rrb at the same time.
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3 class="capitalize">example</h3>
+            <p>
+                To illustrate the effect of some of these instructions, let’s
+                sort a random list of integers. In this example, we’ll consider
+                that both stacks grow from the right.
+            </p>
+            <img
+                src="./img/push_swap_example-01.png"
+                alt="example of sorting data using the available operations"
+                class="portfolio-item-individual__img"
+            />
+            <p>
+                Integers from a get sorted in 12 instructions. (<strong
+                    >Ps :</strong
+                >
+                I can do better &#128521;).
+            </p>
+            <h3 class="capitalize">the "push_swap" program</h3>
+            <table class="portfolio-item-individual__table">
+                <tr>
+                    <th>Program name</th>
+                    <td>push_swap</td>
+                </tr>
+                <tr>
+                    <th>Turn in files</th>
+                    <td>Makefile, *.h, *.c</td>
+                </tr>
+                <tr>
+                    <th>Makefile</th>
+                    <td>NAME, all, clean, fclean, re</td>
+                </tr>
+                <tr>
+                    <th>Arguments</th>
+                    <td>stack <strong>A</strong> : a list of integers</td>
+                </tr>
+                <tr>
+                    <th>External functs.</th>
+                    <td>read, write, malloc, free, exit</td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>Sort stacks</td>
+                </tr>
+            </table>
+            <h3 class="capitalize">another example</h3>
+            <img
+                src="./img/push_swap_example-02.png"
+                alt="example of executing push_swap program"
+                class="portfolio-item-individual__img"
+            />
+            <h3 class="capitalize">the checker</h3>
+            <p>
+                Thanks to the checker program, you will be able to check whether
+                the list of instructions generated by the push_swap program
+                actually sorts the stack properly.
+            </p>
+            <p>
+                If the program checker_OS displays "KO", it means that push_swap
+                came up with a list of instructions that doesn’t sort the
+                numbers.
+            </p>
+            <p>
+                The checker is available with source code of my push_swap
+                project in the link below.
+            </p>
+            <h3 class="capitalize">Source Code</h3>
+            <p>
+                Here is the
+                <a
+                    href="https://github.com/Mouad-El-Asri/push_swap"
+                    class="portfolio-item-individual__link"
+                    target="_blank"
+                    ><strong>link</strong></a
+                >
+                of my push_swap project repo. Feel free to contact me if you
+                have any questions.
+            </p>
+            <h3 class="capitalize">Conclusion</h3>
+            <p>< <span>FUTURE:</span> IS_LOADING /></p>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <a href="mailto:elasri.mouad.2002@gmail.com" class="footer__link">
+                elasri.mouad.2002@gmail.com
+            </a>
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://github.com/Mouad-El-Asri"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                </li>
+
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.linkedin.com/in/mouad-el-asri/"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="mailto:elasri.mouad.2002@gmail.com"
+                        ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://twitter.com/MouadElAsri4"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.instagram.com/mouad_el_asriii/"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.facebook.com/mouad.alasri.7"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                </li>
+            </ul>
+            <p class="footer__bottom">
+                Built with <strong><i class="fa-solid fa-heart"></i></strong> by
+                Mouad El Asri
+            </p>
+        </footer>
+    </body>
+</html>

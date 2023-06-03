@@ -12,7 +12,7 @@
 - Footer (Contact)
 
 
-## How To Contribute - 
+## How To Contribute
 
 I would be very happy to review your PRs and all the awesome things that you can improve on my portfolio.
 

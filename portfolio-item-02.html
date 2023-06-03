@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width , initial-scale=1.0"
+        />
+        <title>Work | push_swap</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+            integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">
+                <img src="./img/logo.png" alt="mouad el asri logo image" />
+            </div>
+
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="./index.html" class="nav__link capitalize"
+                            >home</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a
+                            href="./index.html#services"
+                            class="nav__link capitalize"
+                            >services</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a
+                            href="./index.html#about"
+                            class="nav__link capitalize"
+                            >about</a
+                        >
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="./index.html#work" class="nav__link capitalize"
+                            >work</a
+                        >
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro capitalize">
+                welcome to my<strong>so_long</strong>project
+            </h1>
+
+            <p class="section__subtitle section__subtitle--intro capitalize">
+                2D game with minlibx
+            </p>
+
+            <img
+                src="./img/portfolio-02.png"
+                alt="a picture of push_swap visualizer"
+                class="intro__img"
+            />
+        </section>
+
+        <!-- About Project -->
+
+        <div class="portfolio-item-individual">
+            <p>
+                This project is a small 2D game with minilibx. NOTE !!! The
+                MiniLibX! is a library that was developed internally and
+                includes basic necessary tools to open a window, create images
+                and deal with keyboard and mouse events.
+            </p>
+            <img
+                src="./img/so_long.gif"
+                alt="image of my 2D game"
+                class="portfolio-item-individual__img"
+            />
+            <h2 class="capitalize">Foreword</h2>
+            <p>
+                Being a developer is a great thing for creating your own game.
+            </p>
+            <p>
+                But a good game needs some good assets. In order to create 2D
+                games, you will have to search for tiles, tilesets, sprites, and
+                sprite sheets.
+            </p>
+            <p>
+                Fortunately, some talented artists are willing to share their
+                works on platforms like: itch.io
+            </p>
+            <p>In any case, try to respect other people’s work.</p>
+
+            <h2 class="capitalize">objectives</h2>
+            <p>It’s time to create a basic computer graphics project!</p>
+            <p>
+                so long helped me to improve my skills in the following areas:
+                window management, event handling, colors, textures, and so
+                forth.
+            </p>
+            <p>
+                I used the MiniLibX graphical library! This library was
+                developed internally and includes basic necessary tools to open
+                a window, create images and deal with keyboard and mouse events.
+            </p>
+            <p>
+                The other goals are: being rigorous, level up in C programming,
+                use basic algorithms, do some information research, and so
+                forth.
+            </p>
+            <h2 class="capitalize">common information</h2>
+            <ul>
+                <li>The project is written in C.</li>
+                <li>The project is written in accordance with the Norm.</li>
+                <li>
+                    Functions should not quit unexpectedly (segmentation fault,
+                    bus error, double free, etc) apart from undefined behaviors.
+                </li>
+                <li>
+                    All heap allocated memory space is properly freed when
+                    necessary.
+                </li>
+                <li>
+                    The project include a Makefile which will compile source
+                    files to the required output with the flags -Wall, -Wextra
+                    and -Werror, using cc, and the Makefile doesn't relink.
+                </li>
+                <li>
+                    Makefile contain the rules $(NAME), all, clean, fclean and
+                    re.
+                </li>
+            </ul>
+            <h2 class="capitalize">the project</h2>
+            <h3 class="capitalize">so_long program</h3>
+            <table class="portfolio-item-individual__table">
+                <tr>
+                    <th>Program name</th>
+                    <td>so_long</td>
+                </tr>
+                <tr>
+                    <th>Turn in files</th>
+                    <td>Makefile, *.h, *.c, maps, textures</td>
+                </tr>
+                <tr>
+                    <th>Makefile</th>
+                    <td>NAME, all, clean, fclean, re</td>
+                </tr>
+                <tr>
+                    <th>Arguments</th>
+                    <td>A map in format *.ber</td>
+                </tr>
+                <tr>
+                    <th>External functs.</th>
+                    <td>
+                        <ul>
+                            <li>
+                                open, close, read, write, malloc, free, perror,
+                                strerror, exit
+                            </li>
+                            <li>
+                                All functions of the math library (-lm compiler
+                                option, man man 3 math)
+                            </li>
+                            <li>All functions of the MiniLibX</li>
+                            <li>
+                                and any other functions
+                                <strong>YOU</strong> coded
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Description</th>
+                    <td>
+                        Create a basic 2D game in which a dolphin escapes Earth
+                        after eating some fish. Instead of a dolphin, fish, and
+                        the Earth, you can use any character, any collectible
+                        and any place you want.
+                    </td>
+                </tr>
+            </table>
+            <h3 class="capitalize">example</h3>
+            <h3 class="capitalize">example</h3>
+            <img
+                src="./img/push_swap_example-02.png"
+                alt="example of executing push_swap program"
+                class="portfolio-item-individual__img"
+            />
+            <h3 class="capitalize">Source Code</h3>
+            <p>
+                Here is the
+                <a
+                    href="https://github.com/Mouad-El-Asri/so_long"
+                    class="portfolio-item-individual__link"
+                    target="_blank"
+                    ><strong>link</strong></a
+                >
+                of my so_long project repo. Feel free to contact me if you
+                need any help.
+            </p>
+            <h3 class="capitalize">Conclusion</h3>
+            <p>< <span>FUTURE:</span> IS_LOADING /></p>
+        </div>
+
+        <!-- Footer -->
+
+        <footer class="footer">
+            <a href="mailto:elasri.mouad.2002@gmail.com" class="footer__link">
+                elasri.mouad.2002@gmail.com
+            </a>
+            <ul class="contact-list">
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://github.com/Mouad-El-Asri"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                </li>
+
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.linkedin.com/in/mouad-el-asri/"
+                        ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="mailto:elasri.mouad.2002@gmail.com"
+                        ><i class="fa-solid fa-envelope"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://twitter.com/MouadElAsri4"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.instagram.com/mouad_el_asriii/"
+                        ><i class="fa-brands fa-instagram"></i
+                    ></a>
+                </li>
+                <li class="contact-list__item">
+                    <a
+                        class="contact-list__link"
+                        href="https://www.facebook.com/mouad.alasri.7"
+                        ><i class="fa-brands fa-facebook"></i
+                    ></a>
+                </li>
+            </ul>
+            <p class="footer__bottom">
+                Built with <strong><i class="fa-solid fa-heart"></i></strong> by
+                Mouad El Asri
+            </p>
+        </footer>
+    </body>
+</html>
